@@ -1,0 +1,17 @@
+<doctype html>
+<title>Edit User - Python Flask MySQL CRUD</title>
+<h2>Edit User</h2>
+<form method="post" action="/update-post">
+    <dl>
+		<p>
+			<input name="inputTitle" value="{{ row['post_title'] }}" type="text" placeholder="title" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputContents" value="{{ row['post_contents'] }}" type="text" placeholder="Nội dung" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input name="id" value="{{ row['id'] }}" type="hidden">
+		<input type="submit" value="Submit">
+	</p>
+</form>
